@@ -1,0 +1,17 @@
+https://stackoverflow.com/questions/68216941/make-css-shimmer-effect-work-an-already-loaded-image
+
+.shimmer {
+  color: grey;
+  display:inline-block;
+  -webkit-mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2.5s infinite;
+  font-size: 50px;
+  max-width:200px;
+}
+
+@keyframes shimmer {
+  100% {-webkit-mask-position:left}
+}
+<p class="shimmer">Shimmering Text</p>
+<img src="https://i.stack.imgur.com/MeQxk.png"class="shimmer" />
