@@ -1,0 +1,63 @@
+#code to make table and set it to the center of the page.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Homework Tracker</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+
+        body{
+            font-family: 'Outfit', sans-serif;
+            text-align: center;
+            background-color: rgb(248, 250, 251);
+        }
+
+        table,tr,td,th{
+          border-collapse: collapse;
+          width: 900px;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          background-color: white;
+          text-align: center;
+
+        }
+
+        .Table{
+          filter: drop-shadow(0 0 1rem rgb(238, 238, 238));
+          border: 0px white;
+          border-radius: 16px; 
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+        }
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class = "Table">
+
+      <table>
+        <tr>
+          <td>9:00 AM - 9:45 AM</td>
+          <td>Science<br><i>Gaeeni</i><br><b>Science Lab</b></td>
+          <td>Mech<br><i>Perlman</i><br><b>Room 7</b></td>
+          <td>Math<br><i>Perlman</i><br><b>Room 7</b></td>
+          <td>Math<br><i>Perlman</i><br><b>Room 7</b></td>
+          <td>Math<br><i>Cardillo</i><br><b>Room 9</b></td>
+        </tr>
+      </table>
+    </div>
+    
+  </body>
+
+</html>
